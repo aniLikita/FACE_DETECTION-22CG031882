@@ -1,0 +1,24 @@
+cat > .gitignore << 'EOF'
+# Python / VS Code / env
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.env.*
+.vscode/
+
+# SQLite DB (do NOT commit your local DB)
+database.db
+
+# Uploads / saved images (can be regenerated)
+static/uploads/
+
+# macOS
+.DS_Store
+
+
+# Jupyter
+.ipynb_checkpoints/
+EOF
